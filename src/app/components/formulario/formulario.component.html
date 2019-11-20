@@ -1,0 +1,114 @@
+<h1>formulario</h1>
+<div class="form-row">
+    <div class="col-md-6">
+        <h3>Registro de cliente</h3>
+        <form [formGroup]="this.formularioPractica" (ngSubmit)="FuncionFormulario()">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nombre1">Primer nombre</label>
+                    <input type="text" class="form-control" id="nombre1" formControlName="nombre1" placeholder="Nombre 1">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="nombre2">Segundo Nombre</label>
+                    <input type="text" class="form-control" id="nombre2" formControlName="nombre2" placeholder="Nombre 2">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="apellido1">Primer apellido</label>
+                    <input type="text" class="form-control" id="apellido1" formControlName="apellido1" placeholder="Apellido 1">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="apellido2">Segundo apellido</label>
+                    <input type="text" class="form-control" id="apellido2" formControlName="apellido2"placeholder="Apellido 2">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="tdocument">Tipo de documento</label>
+                    <select id="tdocument" class="form-control" formControlName="tdocument">
+                        <option selected>Seleccionar</option>
+                        <option>CC</option>
+                        <option>TI</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="genero">Genero</label>
+                    <select id="genero" class="form-control" formControlName="genero">
+                        <option selected>Seleccionar</option>
+                        <option>M</option>
+                        <option>F</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="document">Documento de identidad</label>
+                    <input type="number" class="form-control" id="document" formControlName="document" placeholder="Documento">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" formControlName="email" placeholder="E-Mail">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="telefono">Telefono</label>
+                    <input type="number" class="form-control" id="telefono" formControlName="telefono" placeholder="Telefono">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="celular">Celular</label>
+                    <input type="number" class="form-control" id="celular" formControlName="celular" placeholder="Celular">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="comentarios">Comntarios</label>
+                    <textarea name="comentarios" rows="4" cols="73" formControlName="comentarios"></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success">Guardar</button>
+        </form>
+    </div>
+
+    <div class="col-md-6">
+        <h3>Listar</h3>
+        <textarea name="persona" rows="23" cols="73" id="persona" formControlName="persona"></textarea>
+    </div>
+</div>
+
+<!-- <form [formGroup]="this.formularioPractica" (ngSubmit)="FuncionFormulario()">
+
+    <div class=" form-group ">
+        <div class="input-group ">
+            <div class="input-group-prepend ">
+                <div class="input-group-text bg-white ">
+                    <i class="fa fa-user-circle "></i>
+                </div>
+
+            </div>
+
+            <input name="NombrePropietario " class="form-control " formControlName="NombrePropietario" placeholder=" Nombre del propietario ">
+
+        </div>
+    </div>
+    <div class=" form-group ">
+        <div class="input-group ">
+            <div class="input-group-prepend ">
+                <div class="input-group-text bg-white ">
+                    <i class="fa fa-user-circle "></i>
+                </div>
+
+            </div>
+
+
+            <input name="ApellidoPropietario " class="form-control " formControlName="ApellidoPropietario" placeholder="ApellidoPropietario ">
+
+        </div>
+    </div>
+
+    <div class="form-group ">
+        <button class="btn btn-success btn-lg btn-block " type="submit "> <i class="fa fa-database "></i> Aceptar</button>
+    </div>
+</form> -->
